@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Inglés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .tabs {
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .tablink {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            cursor: pointer;
+            font-size: 17px;
+            color: #f2f2f2;
+            transition: 0.3s;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .tablink:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+        .tablink.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border-top: none;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .exercise {
+            margin-bottom: 20px;
+        }
+        select {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .feedback {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Ejercicios de Inglés</h1>
+
+<!-- Pestañas para los temas -->
+<div class="tabs">
+    <button class="tablink" onclick="openTab(event, 'simplePresent')">Presente Simple</button>
+    <button class="tablink" onclick="openTab(event, 'presentContinuous')">Presente Continuo</button>
+    <button class="tablink" onclick="openTab(event, 'simplePast')">Pasado Simple</button>
+    <button class="tablink" onclick="openTab(event, 'future')">Futuro con Will y Going To</button>
+</div>
+
+<!-- Ejercicio: Presente Simple -->
+<div id="simplePresent" class="tabcontent">
+    <div class="exercise">
+        <h2>Presente Simple</h2>
+        <p>Selecciona la palabra correcta para completar las oraciones:</p>
+        <form id="simplePresentForm">
+            <!-- 20 Ejercicios de Presente Simple -->
+            <p>1. She <select id="simplePresent1">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="go">go</option>
+                <option value="goes">goes</option>
+            </select> to school every day.</p>
+
+            <p>2. They <select id="simplePresent2">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="plays">plays</option>
+                <option value="play">play</option>
+            </select> football on weekends.</p>
+
+            <p>3. He <select id="simplePresent3">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="eat">eat</option>
+                <option value="eats">eats</option>
+            </select> breakfast at 7:00 AM.</p>
+
+            <p>4. They <select id="simplePresent4">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="lives">lives</option>
+                <option value="live">live</option>
+            </select> in New York.</p>
+
+            <p>5. The cat <select id="simplePresent5">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="drink">drink</option>
+                <option value="drinks">drinks</option>
+            </select> milk every morning.</p>
+
+            <p>6. I <select id="simplePresent6">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="like">like</option>
+                <option value="likes">likes</option>
+            </select> to read books in my free time.</p>
+
+            <p>7. They <select id="simplePresent7">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="study">study</option>
+                <option value="studies">studies</option>
+            </select> English at the university.</p>
+
+            <p>8. She <select id="simplePresent8">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="go">go</option>
+                <option value="goes">goes</option>
+            </select> to the gym twice a week.</p>
+
+            <p>9. The dog <select id="simplePresent9">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="run">run</option>
+                <option value="runs">runs</option>
+            </select> very fast.</p>
+
+            <p>10. We <select id="simplePresent10">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="love">love</option>
+                <option value="loves">loves</option>
+            </select> to travel during the summer.</p>
+
+            <p>11. John <select id="simplePresent11">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="work">work</option>
+                <option value="works">works</option>
+            </select> at a bank.</p>
+
+            <p>12. The birds <select id="simplePresent12">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="sing">sing</option>
+                <option value="sings">sings</option>
+            </select> every morning.</p>
+
+            <p>13. She <select id="simplePresent13">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="wash">wash</option>
+                <option value="washes">washes</option>
+            </select> the dishes after dinner.</p>
+
+            <p>14. They <select id="simplePresent14">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="have">have</option>
+                <option value="has">has</option>
+            </select> a big house.</p>
+
+            <p>15. He <select id="simplePresent15">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="do">do</option>
+                <option value="does">does</option>
+            </select> his homework every day.</p>
+
+            <p>16. We <select id="simplePresent16">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="watch">watch</option>
+                <option value="watches">watches</option>
+            </select> TV in the evening.</p>
+
+            <p>17. The sun <select id="simplePresent17">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="rise">rise</option>
+                <option value="rises">rises</option>
+            </select> in the east.</p>
+
+            <p>18. She <select id="simplePresent18">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="study">study</option>
+                <option value="studies">studies</option>
+            </select> hard for exams.</p>
+
+            <p>19. They <select id="simplePresent19">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="play">play</option>
+                <option value="plays">plays</option>
+            </select> the guitar.</p>
+
+            <p>20. He <select id="simplePresent20">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="teach">teach</option>
+                <option value="teaches">teaches</option>
+            </select> Spanish at the school.</p>
+
+            <p>21. Maria <select id="simplePresent21">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="like">like</option>
+                <option value="likes">likes</option>
+            </select> chocolate.</p>
+
+            <p>22. The teacher <select id="simplePresent22">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="explain">explain</option>
+                <option value="explains">explains</option>
+            </select> the lesson clearly.</p>
+
+            <p>23. My friends <select id="simplePresent23">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="enjoy">enjoy</option>
+                <option value="enjoys">enjoys</option>
+            </select> playing chess.</p>
+
+            <p>24. The library <select id="simplePresent24">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="open">open</option>
+                <option value="opens">opens</option>
+            </select> at 8 AM.</p>
+
+            <p>25. Dogs <select id="simplePresent25">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="bark">bark</option>
+                <option value="barks">barks</option>
+            </select> loudly.</p>
+
+            <p>26. She <select id="simplePresent26">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="drive">drive</option>
+                <option value="drives">drives</option>
+            </select> to work every day.</p>
+
+            <p>27. The restaurant <select id="simplePresent27">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="serve">serve</option>
+                <option value="serves">serves</option>
+            </select> delicious food.</p>
+
+            <p>28. My brother <select id="simplePresent28">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="cook">cook</option>
+                <option value="cooks">cooks</option>
+            </select> dinner every night.</p>
+
+            <p>29. The flowers <select id="simplePresent29">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="bloom">bloom</option>
+                <option value="blooms">blooms</option>
+            </select> in spring.</p>
+
+            <p>30. She <select id="simplePresent30">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="learn">learn</option>
+                <option value="learns">learns</option>
+            </select> new languages.</p>
+
+            <button type="button" onclick="checkSimplePresent()">Verificar</button>
+            <p id="simplePresentFeedback" class="feedback"></p>
+        </form>
+    </div>
+</div>
+
+<!-- Ejercicio: Presente Continuo -->
+<div id="presentContinuous" class="tabcontent">
+    <div class="exercise">
+        <h2>Presente Continuo</h2>
+        <p>Selecciona la palabra correcta para completar las oraciones:</p>
+        <form id="presentContinuousForm">
+            <!-- 20 Ejercicios de Presente Continuo -->
+            <p>1. She <select id="presentContinuous1">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous2">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="run">run</option>
+                <option value="running">running</option>
+            </select> right now.</p>
+
+            <p>2. They <select id="presentContinuous3">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous4">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="play">play</option>
+                <option value="playing">playing</option>
+            </select> football.</p>
+
+            <p>3. I <select id="presentContinuous5">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="am">am</option>
+            </select> <select id="presentContinuous6">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="write">write</option>
+                <option value="writing">writing</option>
+            </select> an email right now.</p>
+
+            <p>4. He <select id="presentContinuous7">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous8">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="read">read</option>
+                <option value="reading">reading</option>
+            </select> a book.</p>
+
+            <p>5. We <select id="presentContinuous9">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous10">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="watch">watch</option>
+                <option value="watching">watching</option>
+            </select> TV right now.</p>
+
+            <p>6. She <select id="presentContinuous11">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous12">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="cook">cook</option>
+                <option value="cooking">cooking</option>
+            </select> dinner.</p>
+
+            <p>7. They <select id="presentContinuous13">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous14">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="study">study</option>
+                <option value="studying">studying</option>
+            </select> English.</p>
+
+            <p>8. He <select id="presentContinuous15">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous16">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="sleep">sleep</option>
+                <option value="sleeping">sleeping</option>
+            </select> now.</p>
+
+            <p>9. We <select id="presentContinuous17">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous18">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="listen">listen</option>
+                <option value="listening">listening</option>
+            </select> to music.</p>
+
+            <p>10. I <select id="presentContinuous19">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous20">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="work">work</option>
+                <option value="working">working</option>
+            </select> from home.</p>
+
+            <p>11. The students <select id="presentContinuous21">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous22">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="study">study</option>
+                <option value="studying">studying</option>
+            </select> for their exams.</p>
+
+            <p>12. She <select id="presentContinuous23">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous24">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="paint">paint</option>
+                <option value="painting">painting</option>
+            </select> a beautiful picture.</p>
+
+            <p>13. They <select id="presentContinuous25">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous26">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="dance">dance</option>
+                <option value="dancing">dancing</option>
+            </select> at the party.</p>
+
+            <p>14. He <select id="presentContinuous27">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous28">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="build">build</option>
+                <option value="building">building</option>
+            </select> a new house.</p>
+
+            <p>15. We <select id="presentContinuous29">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous30">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="plan">plan</option>
+                <option value="planning">planning</option>
+            </select> our trip.</p>
+
+            <p>16. The baby <select id="presentContinuous31">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous32">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="sleep">sleep</option>
+                <option value="sleeping">sleeping</option>
+            </select> peacefully.</p>
+
+            <p>17. She <select id="presentContinuous33">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous34">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="cook">cook</option>
+                <option value="cooking">cooking</option>
+            </select> dinner right now.</p>
+
+            <p>18. They <select id="presentContinuous35">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous36">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="run">run</option>
+                <option value="running">running</option>
+            </select> in the park.</p>
+
+            <p>19. He <select id="presentContinuous37">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous38">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="read">read</option>
+                <option value="reading">reading</option>
+            </select> a book.</p>
+
+            <p>20. We <select id="presentContinuous39">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous40">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="prepare">prepare</option>
+                <option value="preparing">preparing</option>
+            </select> for the exam.</p>
+
+            <button type="button" onclick="checkPresentContinuous()">Verificar</button>
+            <p id="presentContinuousFeedback" class="feedback"></p>
+        </form>
+    </div>
+</div>
+
+<!-- Ejercicio: Pasado Simple -->
+<div id="simplePast" class="tabcontent">
+    <div class="exercise">
+        <h2>Pasado Simple</h2>
+        <p>Selecciona la palabra correcta para completar las oraciones:</p>
+        <form id="simplePastForm">
+            <!-- 20 Ejercicios de Pasado Simple -->
+            <p>1. I <select id="simplePast1">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="go">go</option>
+                <option value="went">went</option>
+            </select> to the park yesterday.</p>
+
+            <p>2. She <select id="simplePast2">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="watch">watch</option>
+                <option value="watched">watched</option>
+            </select> a movie last night.</p>
+
+            <p>3. They <select id="simplePast3">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="visit">visit</option>
+                <option value="visited">visited</option>
+            </select> their grandparents last week.</p>
+
+            <p>4. He <select id="simplePast4">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="play">play</option>
+                <option value="played">played</option>
+            </select> basketball yesterday.</p>
+
+            <p>5. The kids <select id="simplePast5">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="have">have</option>
+                <option value="had">had</option>
+            </select> fun at the park.</p>
+
+            <p>6. She <select id="simplePast6">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="study">study</option>
+                <option value="studied">studied</option>
+            </select> for the exam.</p>
+
+            <p>7. I <select id="simplePast7">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="eat">eat</option>
+                <option value="ate">ate</option>
+            </select> pizza last night.</p>
+
+            <p>8. They <select id="simplePast8">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="buy">buy</option>
+                <option value="bought">bought</option>
+            </select> a new car.</p>
+
+            <p>9. He <select id="simplePast9">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="write">write</option>
+                <option value="wrote">wrote</option>
+            </select> a letter.</p>
+
+            <p>10. We <select id="simplePast10">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="see">see</option>
+                <option value="saw">saw</option>
+            </select> a movie yesterday.</p>
+
+            <p>11. They <select id="simplePast11">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="make">make</option>
+                <option value="made">made</option>
+            </select> dinner last night.</p>
+
+            <p>12. She <select id="simplePast12">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="read">read</option>
+                <option value="read">read</option>
+            </select> the book yesterday.</p>
+
+            <p>13. I <select id="simplePast13">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="sleep">sleep</option>
+                <option value="slept">slept</option>
+            </select> for eight hours.</p>
+
+            <p>14. He <select id="simplePast14">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="drive">drive</option>
+                <option value="drove">drove</option>
+            </select> to work yesterday.</p>
+
+            <p>15. They <select id="simplePast15">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="speak">speak</option>
+                <option value="spoke">spoke</option>
+            </select> three languages.</p>
+
+            <p>16. She <select id="simplePast16">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="think">think</option>
+                <option value="thought">thought</option>
+            </select> about the problem.</p>
+
+            <p>17. I <select id="simplePast17">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="know">know</option>
+                <option value="knew">knew</option>
+            </select> the answer.</p>
+
+            <p>18. He <select id="simplePast18">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="run">run</option>
+                <option value="ran">ran</option>
+            </select> five miles yesterday.</p>
+
+            <p>19. They <select id="simplePast19">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="drink">drink</option>
+                <option value="drank">drank</option>
+            </select> all the juice.</p>
+
+            <p>20. She <select id="simplePast20">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="win">win</option>
+                <option value="won">won</option>
+            </select> the race.</p>
+
+            <p>21. The team <select id="simplePast21">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="meet">meet</option>
+                <option value="met">met</option>
+            </select> the coach yesterday.</p>
+
+            <p>22. She <select id="simplePast22">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="leave">leave</option>
+                <option value="left">left</option>
+            </select> the office at 5 PM.</p>
+
+            <p>23. They <select id="simplePast23">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="find">find</option>
+                <option value="found">found</option>
+            </select> the keys.</p>
+
+            <p>24. He <select id="simplePast24">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="feel">feel</option>
+                <option value="felt">felt</option>
+            </select> happy yesterday.</p>
+
+            <p>25. She <select id="simplePast25">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="keep">keep</option>
+                <option value="kept">kept</option>
+            </select> the secret.</p>
+
+            <p>26. They <select id="simplePast26">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="hear">hear</option>
+                <option value="heard">heard</option>
+            </select> the news.</p>
+
+            <p>27. He <select id="simplePast27">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="lose">lose</option>
+                <option value="lost">lost</option>
+            </select> his wallet.</p>
+
+            <p>28. I <select id="simplePast28">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="pay">pay</option>
+                <option value="paid">paid</option>
+            </select> the bill.</p>
+
+            <p>29. They <select id="simplePast29">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="put">put</option>
+                <option value="put">put</option>
+            </select> the books on the shelf.</p>
+
+            <p>30. She <select id="simplePast30">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="send">send</option>
+                <option value="sent">sent</option>
+            </select> the package yesterday.</p>
+
+            <button type="button" onclick="checkSimplePast()">Verificar</button>
+            <p id="simplePastFeedback" class="feedback"></p>
+        </form>
+    </div>
+</div>
+
+<!-- Ejercicio: Futuro con Will y Going To -->
+<div id="future" class="tabcontent">
+    <div class="exercise">
+        <h2>Futuro con Will y Going To</h2>
+        <p>Completa las oraciones seleccionando el verbo "to be" correcto y "will" o "going to":</p>
+        <form id="futureForm">
+            <!-- 20 Ejercicios de Futuro con Will y Going To -->
+            <p>1. I <select id="future1">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future2">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> visit my grandparents tomorrow.</p>
+
+            <p>2. They <select id="future3">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future4">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> watch a movie tonight.</p>
+
+            <p>3. She <select id="future5">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future6">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> start a new job next week.</p>
+
+            <p>4. We <select id="future7">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future8">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> go to the beach this weekend.</p>
+
+            <p>5. I <select id="future9">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future10">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> call you later.</p>
+
+            <p>6. He <select id="future11">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future12">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> travel to Japan next year.</p>
+
+            <p>7. They <select id="future13">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future14">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> have a party tonight.</p>
+
+            <p>8. She <select id="future15">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future16">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> buy a new dress.</p>
+
+            <p>9. We <select id="future17">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future18">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> start a new course.</p>
+
+            <p>10. I <select id="future19">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future20">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> help you with your homework.</p>
+
+            <p>11. She <select id="future21">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future22">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> visit her friend tomorrow.</p>
+
+            <p>12. They <select id="future23">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future24">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> move to a new house next month.</p>
+
+            <p>13. He <select id="future25">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future26">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> start a new hobby.</p>
+
+            <p>14. We <select id="future27">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future28">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> renovate the kitchen.</p>
+
+            <p>15. She <select id="future29">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future30">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> travel abroad next year.</p>
+
+            <p>16. They <select id="future31">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future32">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> buy a new car soon.</p>
+
+            <p>17. He <select id="future33">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future34">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> start a new business.</p>
+
+            <p>18. We <select id="future35">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future36">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> adopt a pet.</p>
+
+            <p>19. I <select id="future37">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future38">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> learn to play the piano.</p>
+
+            <p>20. They <select id="future39">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="future40">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="">---</option>
+                <option value="going to">going to</option>
+            </select> start a new project next month.</p>
+
+            <button type="button" onclick="checkFuture()">Verificar</button>
+            <p id="futureFeedback" class="feedback"></p>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Función para mostrar la pestaña activa
+    function openTab(evt, tabName) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            if (tablinks[i]) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Mostrar la primera pestaña por defecto
+    document.getElementsByClassName("tablink")[0].click();
+
+    // Función de verificación para Presente Simple
+    function checkSimplePresent() {
+        let correctAnswers = [
+            "goes", "play", "eats", "live", "drinks",
+            "like", "study", "goes", "runs", "love",
+            "works", "sing", "washes", "have", "does",
+            "watch", "rises", "studies", "play", "teaches",
+            "likes", "explains", "enjoy", "opens", "bark",
+            "drives", "serves", "cooks", "blooms", "learns"
+        ];
+        let feedback = document.getElementById("simplePresentFeedback");
+        let answers = [];
+        for (let i = 1; i <= 30; i++) {
+            answers.push(document.getElementById(`simplePresent${i}`).value);
+        }
+
+        if (JSON.stringify(answers) === JSON.stringify(correctAnswers)) {
+            feedback.textContent = "¡Correcto!";
+            feedback.className = "feedback correct";
+        } else {
+            feedback.textContent = "Intenta de nuevo.";
+            feedback.className = "feedback incorrect";
+        }
+    }
+
+    // Función de verificación para Presente Continuo
+    function checkPresentContinuous() {
+        let correctAnswers = [
+            "is", "running", "are", "playing", "am", "writing",
+            "is", "reading", "are", "watching",
+            "is", "cooking", "are", "studying", "is", "sleeping",
+            "are", "listening", "am", "working",
+            "is", "singing", "are", "dancing", "is", "building",
+            "are", "planning", "am", "sleeping",
+            "is", "cooking", "are", "running", "is", "reading",
+            "are", "preparing"
+        ];
+        let feedback = document.getElementById("presentContinuousFeedback");
+        let answers = [];
+        for (let i = 1; i <= 40; i++) {
+            answers.push(document.getElementById(`presentContinuous${i}`).value);
+        }
+
+        if (JSON.stringify(answers) === JSON.stringify(correctAnswers)) {
+            feedback.textContent = "¡Correcto!";
+            feedback.className = "feedback correct";
+        } else {
+            feedback.textContent = "Intenta de nuevo.";
+            feedback.className = "feedback incorrect";
+        }
+    }
+
+    // Función de verificación para Pasado Simple
+    function checkSimplePast() {
+        let correctAnswers = [
+            "went", "watched", "visited", "played", "had",
+            "studied", "ate", "bought", "wrote", "saw",
+            "made", "read", "slept", "drove", "spoke",
+            "thought", "knew", "ran", "drank", "won",
+            "met", "left", "found", "felt", "kept",
+            "heard", "lost", "paid", "put", "sent"
+        ];
+        let feedback = document.getElementById("simplePastFeedback");
+        let answers = [];
+        for (let i = 1; i <= 30; i++) {
+            answers.push(document.getElementById(`simplePast${i}`).value);
+        }
+
+        if (JSON.stringify(answers) === JSON.stringify(correctAnswers)) {
+            feedback.textContent = "¡Correcto!";
+            feedback.className = "feedback correct";
+        } else {
+            feedback.textContent = "Intenta de nuevo.";
+            feedback.className = "feedback incorrect";
+        }
+    }
+
+    // Función de verificación para Futuro con Will y Going To
+    function checkFuture() {
+        let correctAnswers = [
+            ["will", ""], ["are", "going to"], ["is", "going to"], ["are", "going to"], ["will", ""],
+            ["will", ""], ["are", "going to"], ["is", "going to"], ["are", "going to"], ["will", ""],
+            ["am", "going to"], ["will", ""], ["is", "going to"], ["are", "going to"], ["will", ""],
+            ["will", ""], ["are", "going to"], ["is", "going to"], ["are", "going to"], ["will", ""],
+            ["am", "going to"], ["will", ""], ["is", "going to"], ["are", "going to"], ["will", ""],
+            ["will", ""], ["are", "going to"], ["is", "going to"], ["are", "going to"], ["will", ""],
+            ["am", "going to"], ["will", ""], ["is", "going to"], ["are", "going to"], ["will", ""]
+        ];
+        let feedback = document.getElementById("futureFeedback");
+        let answers = [];
+        for (let i = 1; i <= 40; i += 2) {
+            answers.push([
+                document.getElementById(`future${i}`).value,
+                document.getElementById(`future${i+1}`).value
+            ]);
+        }
+
+        let correct = true;
+        for (let i = 0; i < correctAnswers.length; i++) {
+            if (answers[i][0] !== correctAnswers[i][0] || answers[i][1] !== correctAnswers[i][1]) {
+                correct = false;
+                break;
+            }
+        }
+
+        if (correct) {
+            feedback.textContent = "¡Correcto!";
+            feedback.className = "feedback correct";
+        } else {
+            feedback.textContent = "Intenta de nuevo.";
+            feedback.className = "feedback incorrect";
+        }
+    }
+</script>
+
+</body>
+</html>
